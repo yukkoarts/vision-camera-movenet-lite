@@ -1,0 +1,16 @@
+//package.json
+{
+  "name": "vision-camera-movenet-lite",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "keywords": ["react-native", "vision-camera", "pose", "movenet", "plugin"],
+  "peerDependencies": {
+    "react-native-vision-camera": ">=3.0.0"
+  },
+  "files": [
+    "index.ts",
+    "android",
+    "ios"
+  ],
+  "license": "MIT"
+}
