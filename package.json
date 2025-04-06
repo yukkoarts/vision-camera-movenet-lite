@@ -1,16 +1,25 @@
 //package.json
 {
   "name": "vision-camera-movenet-lite",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "main": "index.ts",
-  "keywords": ["react-native", "vision-camera", "pose", "movenet", "plugin"],
-  "peerDependencies": {
-    "react-native-vision-camera": ">=3.0.0"
-  },
-  "files": [
-    "index.ts",
-    "android",
-    "ios"
+  "keywords": [
+    "react-native",
+    "vision-camera",
+    "movenet",
+    "pose-detection",
+    "frame-processor"
   ],
-  "license": "MIT"
+  "peerDependencies": {
+    "react-native": ">=0.71.0",
+    "react-native-vision-camera": ">=2.15.4"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yukkoarts/vision-camera-movenet-lite.git"
+  }
 }
