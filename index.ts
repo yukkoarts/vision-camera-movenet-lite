@@ -1,4 +1,3 @@
-//index.ts
 import { Frame } from 'react-native-vision-camera';
 import { Worklets } from 'react-native-worklets-core';
 
