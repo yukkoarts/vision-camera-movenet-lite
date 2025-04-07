@@ -20,15 +20,8 @@
 
 - (id)callback:(Frame *)frame withArguments:(NSArray *)arguments {
   // This is where pose detection would happen (native part)
-  // For now, return mock keypoints
-  return @{
-    @"keypoints": @[
-      @{ @"name": @"left_knee", @"x": @150, @"y": @300, @"score": @0.9 },
-      @{ @"name": @"right_knee", @"x": @250, @"y": @300, @"score": @0.9 },
-      @{ @"name": @"left_hip", @"x": @140, @"y": @250, @"score": @0.95 },
-      @{ @"name": @"right_hip", @"x": @260, @"y": @250, @"score": @0.95 }
-    ]
-  };
+  // Return empty for now – real pose data should be added here
+  return @{ @"keypoints": @[] };
 }
 
 @end
