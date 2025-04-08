@@ -1,12 +1,10 @@
+// vision-camera-movenet-lite/index.ts
 import { Frame } from 'react-native-vision-camera';
-import { Worklets } from 'react-native-worklets-core';
 
 /**
- * Run on the native side and return a pose.
- * You must install this plugin natively for this to work.
+ * Calls the native frame processor plugin registered as 'detectPose'
  */
-export const scanPoses = Worklets.createRunOnUI((frame: Frame) => {
+export function detectPose(frame: Frame): any {
   'worklet';
-  // This function is replaced by native implementation
-  return {};
-});
+  return __detectPose(frame);
+}
